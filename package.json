@@ -1,19 +1,33 @@
 {
   "name": "17nas-mcp-server",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "17NAS network diagnostic tools MCP server",
   "type": "module",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "test": "node --test",
+    "check": "node --check src/index.js && node --check src/network.js"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.0"
+    "@modelcontextprotocol/sdk": "1.32.1"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/AmigaMeow/17nas-mcp.git"
   },
   "license": "MIT",
-  "mcpName": "com.17nas/network-tools"
+  "mcpName": "com.17nas/network-tools",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "17nas-mcp-server": "src/index.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "server.json"
+  ]
 }
