@@ -1,18 +1,19 @@
 {
-"name": "17nas-mcp-server",
-"version": "1.0.0",
-"description": "17NAS network diagnostic tools as MCP server - IP lookup, IPv6 test, DNS check",
-"type": "module",
-"main": "src/index.js",
-"scripts": {
-"start": "node src/index.js"
-},
-"dependencies": {
-"@modelcontextprotocol/sdk": "^1.0.0"
-},
-"repository": {
-"type": "git",
-"url": "https://github.com/AmigaMeow/17nas-mcp.git"
-},
-"license": "MIT"
+  "name": "17nas-mcp-server",
+  "version": "1.0.1",
+  "description": "17NAS network diagnostic tools MCP server",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AmigaMeow/17nas-mcp.git"
+  },
+  "license": "MIT",
+  "mcpName": "com.17nas/network-tools"
 }
